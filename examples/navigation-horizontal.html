@@ -12,6 +12,7 @@
 
 	<link rel="stylesheet" type="text/css" href="../dist/fullpage.css" />
 	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<link rel="stylesheet" href="style.css">
 	<style>
 
 	/* Style for our header texts
@@ -107,10 +108,10 @@
 
 <div id="fullpage">
 
-	<div class="section " id="section0">
+	<div class="section " id="section07">
 		<div class="intro">
-			<img src="imgs/1.png"  alt="1"/>
-			<h1>Sliders navigation dots</h1>
+			<!-- <img src="imgs/1.png"  alt="1"/> -->
+			<h1>Sucher.tech</h1>
 			<p>Create a navigation for your landscape sliders</p>
 		</div>
 	</div>
@@ -146,13 +147,30 @@
 
 
 <script type="text/javascript" src="../dist/fullpage.js"></script>
-<script type="text/javascript" src="examples.js"></script>
+<!-- <script type="text/javascript" src="examples.js"></script> -->
 
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
         anchors: ['firstPage', 'secondPage', '3rdPage'],
         sectionsColor: ['#8FB98B', '#DE564B', '#EAE1C0'],
         slidesNavigation: true,
+				afterSlideLoad: function(section, origin, destination, direction){
+			console.log({
+				section: section,
+				origin: origin,
+				destination: destination,
+				direction: direction
+			});
+		},
+		onSlideLeave: function(section, origin, destination, direction){
+			console.log({
+				section: section,
+				origin: origin,
+				destination: destination,
+				direction: direction
+			});
+		}
+
     });
 </script>
 

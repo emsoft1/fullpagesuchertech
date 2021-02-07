@@ -1,18 +1,339 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Scroll Horizontally Extension - fullPage.js</title>
+        <meta name="author" content="Alvaro Trigo Lopez" />
+        <meta name="description" content="Scroll Horizontally Extension" />
+        <meta
+            name="keywords"
+            content="fullpage,extension,addon,plugin,scrollhorizontally,scroll horizontally,horizontal,horizontally,landscape,slides,slide,panel,full-screen,full width,mousewheel,wheel,trackpad, snap"
+        />
+        <meta name="Resource-type" content="Document" />
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Scroll Horizontally - fullPage.js</title>
-    <meta name="author" content="Alvaro Trigo Lopez" />
-    <meta name="description" content="fullPage auto-height example." />
-    <meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,auto-height,full-screen" />
-    <meta name="Resource-type" content="Document" />
-    <meta http-equiv="refresh" content="0; url=http://alvarotrigo.com/fullPage/extensions/scrollHorizontally.html" />
-</head>
-<body>
+        <link rel="stylesheet" type="text/css" href="../dist/fullpage.css" />
+        <link rel="stylesheet" type="text/css" href="examples.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+            integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+            integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+            crossorigin="anonymous"
+        />
+        <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" /> -->
 
-Redirecting...
+        <!--[if IE]>
+            <script type="text/javascript">
+                var console = { log: function () {} };
+            </script>
+        <![endif]-->
+    </head>
+    <body>
+        <ul id="menu">
+            <li data-menuanchor="firstPage">
+                <a href="#firstPage">First slide</a>
+            </li>
+            <li data-menuanchor="secondPage">
+                <a href="#secondPage">Second slide</a>
+            </li>
+            <li data-menuanchor="3rdPage">
+                <a href="#3rdPage">Third slide</a>
+            </li>
+            <li data-menuanchor="4thpage">
+                <a href="#4thpage">Fourth slide</a>
+            </li>
+        </ul>
 
-</body>
+        <div class="count-particles">
+            <span class="js-count-particles">--</span> particles
+        </div>
+
+        <div id="myContainer">
+            <div class="section hero">
+                <div class="ll">
+                    <div id="particles-js1" class="pjs1"></div>
+                </div>
+                <div class="intro">
+                    <h1 class="header-title glitch" data-text="Sucher.tect">
+                        Sucher.tech
+                    </h1>
+
+                    <!-- Make sure data-text equals the text you put inside the tags. -->
+                    <!-- <h1
+                        class="glitch"
+                        data-text="
+glitch"
+                    >
+                        glitch
+                    </h1> -->
+
+                    <div class="header-text">
+                        <h2 class="header-text-you">Your</h2>
+                        Website Development & eCommerce Agency In Berlin
+                    </div>
+                    <button class="header-btn" id="btnone">GET IN TOUCH</button>
+                </div>
+            </div>
+            <div class="section" id="sec2">
+                <div class="sec2-gran">
+                    <video src="" class="video-2"></video>
+                    <p class="sec2-p">
+                        Sucher tech specializes in creating user-oriented, cost
+                        efficient and visionary solutions for e-commerce growth
+                        in a post Covid world. Our target industries in which we
+                        consider to have profound knowledge and experience
+                        consist of sales of designer products, helping importers
+                        or manufacturers as well as big retail markets with
+                        their online sales purposes.
+                    </p>
+                </div>
+            </div>
+            <div class="section">
+                <div class="slide slide1">
+                    <div class="slidee1">
+                        <img src="../image/001.jpg" alt="" class="slideimg" />
+                        <div class="slide-text-div">
+                            <h2 class="slide-headers">
+                                responsive Web Development
+                            </h2>
+                            <h3 class="slide-p">
+                                “Responsive Web design is the approach that
+                                suggests that design and development should
+                                respond to the user’s behavior and environment
+                                based on screen size, platform and orientation.”
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide1">
+                    <div class="slidee1">
+                        <img src="../image/002.jpg" alt="" class="slideimg" />
+                        <div class="slide-text-div">
+                            <div id="particles-js" class="pjs1"></div>
+                            <h2 class="slide-headers">
+                                responsive Web Development
+                            </h2>
+                            <h3 class="slide-p">
+                                “Responsive Web design is the approach that
+                                suggests that design and development should
+                                respond to the user’s behavior and environment
+                                based on screen size, platform and orientation.”
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section sec4">
+                <h3 class="sec4-head">We consider ourselves storytellers!</h3>
+                <h2 class="sec4-title">That’s Us!</h2>
+                <div class="sec4-right">
+                    <p class="sec4-p">
+                        <strong> Mehrdad </strong>is a web-developer with a
+                        background in Electronics and Robotics. His motto is “I
+                        don't want to do something twice, everything can be
+                        automated” . This ideology helps him create bots that
+                        help shorten workflows of day to day business routines.
+                        He has studied electronics and airplane maintenance. His
+                        experience working in the industry motivates him to
+                        before doing things which reduces project redundancy and
+                        grows cost and time efficiency.
+                    </p>
+                </div>
+                <div class="sec4-left">
+                    <p class="sec4-p">
+                        <strong> Mehrdad </strong>is a web-developer with a
+                        background in Electronics and Robotics. His motto is “I
+                        don't want to do something twice, everything can be
+                        automated” . This ideology helps him create bots that
+                        help shorten workflows of day to day business routines.
+                        He has studied electronics and airplane maintenance. His
+                        experience working in the industry motivates him to
+                        before doing things which reduces project redundancy and
+                        grows cost and time efficiency.
+                    </p>
+                </div>
+            </div>
+            <div class="section sec5">
+                <div class="sec5-next">
+                    <h2 class="sec5-title">
+                        You probably wonder what we charge:
+                    </h2>
+                    <div class="sec5-ticket t1">
+                        <div class="ticketback">
+                            <h2 class="ticket-tile">
+                                Package #1 “Build my Website”
+                            </h2>
+                            <h3 class="ticket-head">Included Services</h3>
+                            <h4 class="ticket-p">
+                                responsive Web Development UX/UI Design Social
+                                Media Integration 2x Revisions within 4 weeks
+                                after launch
+                            </h4>
+                            <h4 class="ticket-price">2999,99 €</h4>
+                            <button class="ticketbtn">Find Out more</button>
+                        </div>
+                    </div>
+                    <div class="sec5-ticket t2">
+                        <div class="ticketback">
+                            <h2 class="ticket-tile">
+                                Package #1 “Build my Website”
+                            </h2>
+                            <h3 class="ticket-head">Included Services</h3>
+                            <h4 class="ticket-p">
+                                responsive Web Development UX/UI Design Social
+                                Media Integration 2x Revisions within 4 weeks
+                                after launch
+                            </h4>
+                            <h4 class="ticket-price">3999,99 €</h4>
+                            <button class="ticketbtn">Find Out more</button>
+                        </div>
+                    </div>
+                    <div class="sec5-ticket t3">
+                        <div class="ticketback">
+                            <h2 class="ticket-tile">
+                                Package #1 “Build my Website”
+                            </h2>
+                            <h3 class="ticket-head">Included Services</h3>
+                            <h4 class="ticket-p">
+                                responsive Web Development UX/UI Design Social
+                                Media Integration 2x Revisions within 4 weeks
+                                after launch
+                            </h4>
+                            <h4 class="ticket-price">Let’s Talk about it ;)</h4>
+                            <button class="ticketbtn">Find Out more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section sec6">
+                <h2 class="sec6-head">
+                    These Guys already like us, you will too!
+                </h2>
+                <h1 class="sec6-title">sucher</h1>
+                <div class="tes">
+                    <div
+                        class="l"
+                        style="
+                            width: 100%;
+                            height: 100%;
+                            background-color: #ff0000;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        "
+                    >
+                        <!-- <div style="color: black">
+                            it is cool !!jk;jhhjk;hiuhiuhp;;uhp;uhligkffkgf
+                        </div>
+                        <div style="color: black">it is cooler !!</div> -->
+                        <div
+                            style="
+                                border: 1px solid #aaa;
+                                width: 90%;
+                                height: 90%;
+                                background-color: blue;
+                            "
+                        >
+                            <h3>hooo</h3>
+                        </div>
+                        <div
+                            style="
+                                border: 1px solid #aaa;
+                                width: 90%;
+                                height: 90%;
+                                background-color: blue;
+                            "
+                        >
+                            <h3>h99ooo</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <input type="hidden" id="_4" value="3" />
+
+        <!-- WARNING!! -->
+        <!-- This file is limited. You can't use it to test the extension! It won't work. -->
+        <!-- You have to purchase it to try it as detailed in the FAQs:  -->
+        <!-- https://alvarotrigo.com/fullPage/extensions/faqs.html-->
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+        <script
+            type="text/javascript"
+            src="../exetention/fullpage.scrollHorizontally.limited.min.js"
+        ></script>
+        <!-- END WARNING-->
+
+        <script
+            type="text/javascript"
+            src="../exetention/fullpage.extensions.min.js"
+        ></script>
+        <script src="../particles.js"></script>
+        <script src="../particles1.js"></script>
+        <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
+        <!-- stats.js lib -->
+        <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".l").slick({
+                    autoplay: true,
+                    autoplayspeed: 1000,
+                    dots: true,
+                });
+            });
+            new fullpage("#myContainer", {
+                sectionsColor: [
+                    "#ff73a1",
+                    "#4BBFC3",
+                    "#7BAABE",
+                    "whitesmoke",
+                    "#ccddff",
+                    "#ccc",
+                ],
+                anchors: ["firstPage", "secondPage", "3rdPage", "4thpage"],
+                menu: "#menu",
+                slidesNavigation: true,
+                scrollHorizontally: true,
+                scrollHorizontallyKey: "08FB523D-FFD04D76-A5BFB8B8-EB8E6751",
+                afterSlideLoad: function (
+                    section,
+                    origin,
+                    destination,
+                    direction
+                ) {
+                    console.log({
+                        section: section,
+                        origin: origin,
+                        destination: destination,
+                        direction: direction,
+                    });
+                },
+                onSlideLeave: function (
+                    section,
+                    origin,
+                    destination,
+                    direction
+                ) {
+                    console.log({
+                        section: section,
+                        origin: origin,
+                        destination: destination,
+                        direction: direction,
+                    });
+                },
+            });
+        </script>
+
+        <script src="./script.js"></script>
+        <script src="./script1.js"></script>
+    </body>
 </html>
