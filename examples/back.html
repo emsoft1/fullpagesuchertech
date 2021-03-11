@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style001.css" />
+    </head>
+    <body>
+        <img src="../image/ball0011.svg" class="ballone" />
+        <img src="../image/ball002.png" class="balltwo" />
+        <img src="../image/ball003.png" class="balltree" />
+        <img src="../image/ball0011.svg" class="ballfour" />
+        <img src="../image/ball002.png" class="ballfive" />
+        <img src="../image/ball003.png" class="ballsix" />
+        <script>
+            (function () {
+                var ballone = document.querySelector(".ballone");
+                var balltwo = document.querySelector(".balltwo");
+                var balltree = document.querySelector(".balltree");
+                var ballfour = document.querySelector(".ballfour");
+                var ballfive = document.querySelector(".ballfive");
+                var ballsix = document.querySelector(".ballsix");
+                // document
+                //     .querySelector(".ballone")
+                //     .addEventListener("click", function () {
+
+                console.log("yes");
+                setInterval(function () {
+                    ballone.classList.add("on");
+                    balltwo.classList.add("on");
+                    balltree.classList.add("on");
+                    ballone.addEventListener("transitionend", function () {
+                        // ballone.style.visibility = "hidden";
+                        ballone.style.transitionDuration = "0.00001s";
+                        ballone.classList.remove("on");
+                        ballone.addEventListener("transitionend", function () {
+                            ballone.style.transitionDuration = "4s";
+                            // ballone.style.visibility = "visible";
+                            ballone.classList.add("on");
+                        });
+                    });
+                    balltwo.addEventListener("transitionend", function () {
+                        // ballone.style.visibility = "hidden";
+                        balltwo.style.transitionDuration = "0.00001s";
+                        balltwo.classList.remove("on");
+                        balltwo.addEventListener("transitionend", function () {
+                            balltwo.style.transitionDuration = "3s";
+                            // ballone.style.visibility = "visible";
+                            balltwo.classList.add("on");
+                        });
+                    });
+                    balltree.addEventListener("transitionend", function () {
+                        // ballone.style.visibility = "hidden";
+                        balltree.style.transitionDuration = "0.00001s";
+                        balltree.classList.remove("on");
+                        balltree.addEventListener("transitionend", function () {
+                            balltree.style.transitionDuration = "3.5s";
+
+                            // ballone.style.visibility = "visible";
+                            balltree.classList.add("on");
+                        });
+                    });
+                    // });
+                }, 2000);
+                setInterval(function () {
+                    ballfour.classList.add("on");
+                    ballfive.classList.add("on");
+                    ballsix.classList.add("on");
+                    ballfour.addEventListener("transitionend", function () {
+                        // ballone.style.visibility = "hidden";
+                        ballfour.style.transitionDuration = "0.00001s";
+                        ballfour.classList.remove("on");
+                        ballfour.addEventListener("transitionend", function () {
+                            ballfour.style.transitionDuration = "3.7s";
+                            // ballone.style.visibility = "visible";
+                            ballfour.classList.add("on");
+                        });
+                    });
+                    ballfive.addEventListener("transitionend", function () {
+                        // ballone.style.visibility = "hidden";
+                        ballfive.style.transitionDuration = "0.00001s";
+                        ballfive.classList.remove("on");
+                        ballfive.addEventListener("transitionend", function () {
+                            ballfive.style.transitionDuration = "3.2s";
+                            // ballone.style.visibility = "visible";
+                            ballfive.classList.add("on");
+                        });
+                    });
+                    ballsix.addEventListener("transitionend", function () {
+                        // ballone.style.visibility = "hidden";
+                        ballsix.style.transitionDuration = "0.00001s";
+                        ballsix.classList.remove("on");
+                        ballsix.addEventListener("transitionend", function () {
+                            ballsix.style.transitionDuration = "3.5s";
+
+                            // ballone.style.visibility = "visible";
+                            ballsix.classList.add("on");
+                        });
+                    });
+                    // });
+                }, 1500);
+            })();
+        </script>
+    </body>
+</html>

@@ -11,9 +11,15 @@
         />
         <meta name="Resource-type" content="Document" />
 
-        <link rel="stylesheet" type="text/css" href="../dist/fullpage.css" />
-        <link rel="stylesheet" type="text/css" href="examples.css" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="/dist/fullpage.css" />
+        <link rel="stylesheet" type="text/css" href="/examples/examples.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Codystar&family=Frijole&family=Goldman:wght@700&family=Major+Mono+Display&family=Monofett&family=Monoton&family=Nova+Square&family=Raleway+Dots&family=Six+Caps&family=Stalinist+One&family=Zilla+Slab+Highlight:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/examples/style.css" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
@@ -26,7 +32,14 @@
             integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
             crossorigin="anonymous"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+            integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+            crossorigin="anonymous"
+        />
         <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" /> -->
+        <link rel="stylesheet" href="/examples/mobstyle.css" />
 
         <!--[if IE]>
             <script type="text/javascript">
@@ -35,54 +48,168 @@
         <![endif]-->
     </head>
     <body>
-        <ul id="menu">
-            <li data-menuanchor="firstPage">
-                <a href="#firstPage">First slide</a>
-            </li>
-            <li data-menuanchor="secondPage">
-                <a href="#secondPage">Second slide</a>
-            </li>
-            <li data-menuanchor="3rdPage">
-                <a href="#3rdPage">Third slide</a>
-            </li>
-            <li data-menuanchor="4thpage">
-                <a href="#4thpage">Fourth slide</a>
-            </li>
-        </ul>
+        <!-- <h3 class="ham">🍔</h3> -->
+        <img src="../image/tg_image_2098081224.png" alt="" class="ham">
+        <ul id="menunew" class="over">
+            <h1 class="x1">X</h1>
+            <!-- <svg
+                position:fixed;
+                top:0;
+                left:0;
+                height:100%;
+                width:100%
+                class="linemain"
+            >
+                <line
+                    x1="50"
+                    y1="0"
+                    x2="50"
+                    y2="2000"
+                    style="stroke: rgb(255, 255, 255); stroke-width: 2"
+                />
+            </svg> -->
 
-        <div class="count-particles">
-            <span class="js-count-particles">--</span> particles
+            <a href="#Home" id="homeing" data-hover="🌔" data-not="Home"
+                >Home</a
+            >
+
+            <a href="#Story" data-hover="Story" data-not="🔭" id="storyi">
+                🔭
+                <!-- <img src="/image/sucher-techlogo.png" alt="" /> -->
+            </a>
+
+            <a
+                href="#Services"
+                data-hover="Services"
+                data-not="🚀"
+                id="servicesi"
+            >
+                🚀
+                <!-- <img src="/image/sucher-techlogo.png" alt=""/>  -->
+            </a>
+
+            <a
+                href="#Portfolio"
+                data-hover="Portfolio"
+                data-not="☄️"
+                id="portfolioi"
+            >
+                ☄️
+                <!-- <img src="/image/sucher-techlogo.png" alt=""
+            /> -->
+            </a>
+
+            <a href="#Team" data-hover="Team" data-not="👩‍🚀" id="teami">
+                👩‍🚀
+                <!-- <img src="/image/sucher-techlogo.png" alt=""
+            /> -->
+            </a>
+
+            <a href="#Pricing" data-hover="Pricing" data-not="💎" id="pricingi">
+                💎
+                <!-- <img src="/image/sucher-techlogo.png" alt="" /> -->
+            </a>
+
+            <a
+                href="#Feedback"
+                data-hover="Feedback"
+                data-not="🛰"
+                id="feedbacki"
+            >
+                🛰
+                <!-- <img src="/image/sucher-techlogo.png" alt=""
+            /> -->
+            </a>
+            <a href="#Imprint" data-hover="Imprint" data-not="🪂" id="Imprinti">
+                🪂
+                <!-- <img src="/image/sucher-techlogo.png" alt=""
+            /> -->
+            </a>
+
+            <h2 class="contactbtn">GET IN TOUCH</h2>
+        </ul>
+        <div class="overlay">
+            <canvas id="c"></canvas>
+            <h1 class="x">X</h1>
+            <div class="contact-div">
+                <h2>GET IN TOUCH</h2>
+                <form action="" class="contact-form">
+                    <input
+                        type="email"
+                        placeholder="Your Email"
+                        class="formitem forminp"
+                        id="inpemail"
+                    />
+                    <input
+                        type="text"
+                        placeholder="Your Message"
+                        class="formitem forminp"
+                        id="inpmas"
+                    />
+                    <button type="submit" class="formitem" id="subbtn">
+                        Submit
+                    </button>
+                </form>
+                <h2>Or find us on:</h2>
+            </div>
         </div>
+        <!-- <div class="count-particles">
+            <span class="js-count-particles">--</span> particles
+        </div> -->
 
         <div id="myContainer">
             <div class="section hero">
                 <div class="ll">
-                    <div id="particles-js1" class="pjs1"></div>
+                    <!-- <div id="particles-js1" class="pjs1"></div> -->
+                    <!-- <img
+                        class="imgback"
+                        src="/image/Sucher_tech_logo__21.png"
+                        alt=""
+                    /> -->
                 </div>
-                <div class="intro">
-                    <h1 class="header-title glitch" data-text="Sucher.tect">
-                        Sucher.tech
-                    </h1>
 
-                    <!-- Make sure data-text equals the text you put inside the tags. -->
-                    <!-- <h1
-                        class="glitch"
-                        data-text="
-glitch"
-                    >
-                        glitch
+                <div class="intro">
+                    <!-- <h1 class="header-title" data-text="Sucher.tect">
+                        Sucher.Tech
                     </h1> -->
+
+                    <svg width="100vw" height="100vh" class="ss-text">
+                        <!-- Symbol-->
+                        <symbol id="s-text">
+                            <text
+                                text-anchor="middle"
+                                dy="0.5em"
+                                x="50%"
+                                y="15%"
+                            >
+                                SUCHER.Tech
+                            </text>
+                        </symbol>
+                        <!-- Duplicate symbols-->
+                        <use class="text" xlink:href="#s-text"></use>
+                        <use class="text" xlink:href="#s-text"></use>
+                        <use class="text" xlink:href="#s-text"></use>
+                        <use class="text" xlink:href="#s-text"></use>
+                        <use class="text" xlink:href="#s-text"></use>
+                    </svg>
 
                     <div class="header-text">
                         <h2 class="header-text-you">Your</h2>
-                        Website Development & eCommerce Agency In Berlin
+                        Website Development </br>& eCommerce Agency</br> In Berlin
                     </div>
-                    <button class="header-btn" id="btnone">GET IN TOUCH</button>
+                    <!-- <button class="header-btn" id="btnone">GET IN TOUCH</button> -->
                 </div>
             </div>
             <div class="section" id="sec2">
                 <div class="sec2-gran">
-                    <video src="" class="video-2"></video>
+                    <video
+                        src="/image/P1042916_2(1).mp4"
+                        class="video-2"
+                        autoplay
+                        controls
+                        loop
+                    ></video>
+                    <div class="sphere"></div>
                     <p class="sec2-p">
                         Sucher tech specializes in creating user-oriented, cost
                         efficient and visionary solutions for e-commerce growth
@@ -97,36 +224,166 @@ glitch"
             <div class="section">
                 <div class="slide slide1">
                     <div class="slidee1">
-                        <img src="../image/001.jpg" alt="" class="slideimg" />
+                        <div class="slideimg">
+                            <img
+                                src="../image/webdev1.jpg"
+                                class="slideimgtop"
+                            />
+                            <img
+                                src="../image/webdev2.jpg"
+                                class="slideimgdown"
+                            />
+                        </div>
+                        <!-- <img src="../image/001.jpg" alt="" class="slideimg" /> -->
                         <div class="slide-text-div">
-                            <h2 class="slide-headers">
-                                responsive Web Development
-                            </h2>
+                            <h2 class="slide-headers">Web Development</h2>
                             <h3 class="slide-p">
-                                “Responsive Web design is the approach that
-                                suggests that design and development should
-                                respond to the user’s behavior and environment
-                                based on screen size, platform and orientation.”
+                                “ You can’t see it, but it’s working. The
+                                thousands of lines of code that are responsible
+                                for dynamic user interaction and channelling
+                                information into the palm of your customer's
+                                hand. Our capabilities include all of the
+                                must-haves, like front-end/back-end dev,
+                                Node.js, Javascript, CMS development in
+                                WordPress, and E-Commerce integrations in
+                                Shopify and Woocomerce. Our services include
+                                reponsive web develpoment, making sure websites
+                                look good on every device and deliver your
+                                message to your audience. We offer you the
+                                perfect position to choose the right platform
+                                for your project.”
                             </h3>
                         </div>
                     </div>
                 </div>
                 <div class="slide slide1">
                     <div class="slidee1">
-                        <img src="../image/002.jpg" alt="" class="slideimg" />
+                        <div class="slideimg">
+                            <img src="../image/ui1.jpg" class="slideimgtop" />
+                            <img src="../image/ux1.jpg" class="slideimgdown" />
+                        </div>
+                        <!-- <img src="../image/002.jpg" alt="" class="slideimg" /> -->
                         <div class="slide-text-div">
-                            <div id="particles-js" class="pjs1"></div>
-                            <h2 class="slide-headers">
-                                responsive Web Development
-                            </h2>
+                            <h2 class="slide-headers">UI/UX</h2>
                             <h3 class="slide-p">
-                                “Responsive Web design is the approach that
-                                suggests that design and development should
-                                respond to the user’s behavior and environment
-                                based on screen size, platform and orientation.”
+                                “People have come to expect a stunning user
+                                interface, dead-simple usability, and easy
+                                access to the tools they need, when they need
+                                them. Clever use of imagery, beautiful
+                                typography, and straightforward design are the
+                                name of the game if you want to resonate with
+                                today’s consumers.Our Design team crafts
+                                compelling and impactful web design, with a
+                                focus on user experience, leading trends and
+                                patterns. We share and iterate through high
+                                fidelity, interactive prototypes .Good design
+                                cuts through the noise without confusing its
+                                audience. We put people first, creating visuals
+                                and experiences that make sense, work well, and
+                                respect your customers.We create eye-candy and
+                                user-friendly websites. Modern & responsive for
+                                mobile devices.”
                             </h3>
                         </div>
                     </div>
+                </div>
+                <div class="slide slide1">
+                    <div class="slidee1">
+                        <div class="slideimg">
+                            <img src="../image/shop.jpg" class="slideimgtop" />
+                            <img
+                                src="../image/shop1.jpg"
+                                class="slideimgdown"
+                            />
+                        </div>
+                        <!-- <img src="../image/002.jpg" alt="" class="slideimg" /> -->
+                        <div class="slide-text-div">
+                            <div id="particles-js" class="pjs1"></div>
+                            <h2 class="slide-headers">
+                                Online Shop &eCommerce
+                            </h2>
+                            <h3 class="slide-p">
+                                “is the future. Use the momentum and create your
+                                online store. Mobiteam will build a high-end
+                                online shop, clever, elegant, and easy to use.
+                                On the latest technologies like Shopify or
+                                WooCommerce. in 2020 alone, e-commerce sales are
+                                expected to account for 18.5% of retail sales
+                                worldwide. In other words, eCommerce is taking
+                                over. Ecommerce sales in Europe grew to €621
+                                billion euros in 2019, from €547 billion in
+                                2017. That's a 13.6% increase. Impressive. 60%
+                                of EU consumers who will continue shopping
+                                online at the same level after the outbreak. Use
+                                the momentum!”
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide1">
+                    <div class="slidee1">
+                        <div class="slideimg">
+                            <img src="../image/supp1.jpg" class="slideimgtop" />
+                            <img
+                                src="../image/supp2.jpg"
+                                class="slideimgdown"
+                            />
+                        </div>
+                        <!-- <img src="../image/002.jpg" alt="" class="slideimg" /> -->
+                        <div class="slide-text-div">
+                            <div id="particles-js" class="pjs1"></div>
+                            <h2 class="slide-headers">Consulting & Support</h2>
+                            <h3 class="slide-p">
+                                “We're your partner in success, and we're
+                                available on-demand. A successful website is
+                                constantly evolving to better serve its users
+                                and optimize returns for the business. When you
+                                take advantage of our ongoing support services,
+                                we truly become an extension of your team. Even
+                                our well-established clients need a different
+                                perspective on their thoughts. How to fit in the
+                                market? How to validate a web product? These are
+                                the questions we can help you find a digital
+                                answer for you.”
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section newsec4">
+                <div class="slide sec4slide">
+                    <h1 class="sce4head">
+                        Have a look at <br />
+                        what we’ve done so far:
+                    </h1>
+
+                    <div class="sec4imgdiv">
+                        <h1 class="sec4hovertext">Sucher studio</h1>
+                        <img
+                            src="../image/websample.png"
+                            alt=""
+                            class="portimg"
+                        />
+                    </div>
+                    <div class="newsec4filter"></div>
+                    <!-- <button class="newsec4btn"></button> -->
+                </div>
+                <div class="slide sec4slide">
+                    <h1 class="sce4head">
+                        Have a look at <br />
+                        what we’ve done so far:
+                    </h1>
+
+                    <div class="sec4imgdiv">
+                        <h1 class="sec4hovertext">Sucher studio</h1>
+                        <img
+                            src="../image/websample.png"
+                            alt=""
+                            class="portimg"
+                        />
+                    </div>
+                    <div class="newsec4filter"></div>
+                    <!-- <button class="newsec4btn"></button> -->
                 </div>
             </div>
             <div class="section sec4">
@@ -160,53 +417,59 @@ glitch"
                 </div>
             </div>
             <div class="section sec5">
-                <div class="sec5-next">
-                    <h2 class="sec5-title">
-                        You probably wonder what we charge:
-                    </h2>
-                    <div class="sec5-ticket t1">
-                        <div class="ticketback">
-                            <h2 class="ticket-tile">
-                                Package #1 “Build my Website”
-                            </h2>
-                            <h3 class="ticket-head">Included Services</h3>
-                            <h4 class="ticket-p">
-                                responsive Web Development UX/UI Design Social
-                                Media Integration 2x Revisions within 4 weeks
-                                after launch
-                            </h4>
-                            <h4 class="ticket-price">2999,99 €</h4>
-                            <button class="ticketbtn">Find Out more</button>
+                <h2 class="sec5-title">You probably wonder what we charge:</h2>
+                <div class="sec5-next" id="kh">
+                    <div id="tt1">
+                        <div class="sec5-ticket t1">
+                            <div class="ticketback">
+                                <h2 class="ticket-tile">
+                                    Package #1 “Build my Website”
+                                </h2>
+                                <h3 class="ticket-head">Included Services</h3>
+                                <h4 class="ticket-p">
+                                    responsive Web Development UX/UI Design
+                                    Social Media Integration 2x Revisions within
+                                    4 weeks after launch
+                                </h4>
+                                <h4 class="ticket-price">2999,99 €</h4>
+                                <button class="ticketbtn">Find Out more</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="sec5-ticket t2">
-                        <div class="ticketback">
-                            <h2 class="ticket-tile">
-                                Package #1 “Build my Website”
-                            </h2>
-                            <h3 class="ticket-head">Included Services</h3>
-                            <h4 class="ticket-p">
-                                responsive Web Development UX/UI Design Social
-                                Media Integration 2x Revisions within 4 weeks
-                                after launch
-                            </h4>
-                            <h4 class="ticket-price">3999,99 €</h4>
-                            <button class="ticketbtn">Find Out more</button>
+                    <div id="tt2">
+                        <div class="sec5-ticket t2">
+                            <div class="ticketback">
+                                <h2 class="ticket-tile">
+                                    Package #1 “Build my Website”
+                                </h2>
+                                <h3 class="ticket-head">Included Services</h3>
+                                <h4 class="ticket-p">
+                                    responsive Web Development UX/UI Design
+                                    Social Media Integration 2x Revisions within
+                                    4 weeks after launch
+                                </h4>
+                                <h4 class="ticket-price">3999,99 €</h4>
+                                <button class="ticketbtn">Find Out more</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="sec5-ticket t3">
-                        <div class="ticketback">
-                            <h2 class="ticket-tile">
-                                Package #1 “Build my Website”
-                            </h2>
-                            <h3 class="ticket-head">Included Services</h3>
-                            <h4 class="ticket-p">
-                                responsive Web Development UX/UI Design Social
-                                Media Integration 2x Revisions within 4 weeks
-                                after launch
-                            </h4>
-                            <h4 class="ticket-price">Let’s Talk about it ;)</h4>
-                            <button class="ticketbtn">Find Out more</button>
+                    <div id="tt3">
+                        <div class="sec5-ticket t3">
+                            <div class="ticketback">
+                                <h2 class="ticket-tile">
+                                    Package #1 “Build my Website”
+                                </h2>
+                                <h3 class="ticket-head">Included Services</h3>
+                                <h4 class="ticket-p">
+                                    responsive Web Development UX/UI Design
+                                    Social Media Integration 2x Revisions within
+                                    4 weeks after launch
+                                </h4>
+                                <h4 class="ticket-price">
+                                    Let’s Talk about it ;)
+                                </h4>
+                                <button class="ticketbtn">Find Out more</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -216,13 +479,17 @@ glitch"
                     These Guys already like us, you will too!
                 </h2>
                 <h1 class="sec6-title">sucher</h1>
+
+                <h1 class="slick-prevv"><</h1>
+                <h1 class="slick-nextt">></h1>
+
                 <div class="tes">
                     <div
                         class="l"
                         style="
                             width: 100%;
                             height: 100%;
-                            background-color: #ff0000;
+                            /* background-color: #ff0000; */
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -232,29 +499,119 @@ glitch"
                             it is cool !!jk;jhhjk;hiuhiuhp;;uhp;uhligkffkgf
                         </div>
                         <div style="color: black">it is cooler !!</div> -->
-                        <div
-                            style="
-                                border: 1px solid #aaa;
-                                width: 90%;
-                                height: 90%;
-                                background-color: blue;
-                            "
-                        >
-                            <h3>hooo</h3>
+                        <div class="testpdiv">
+                            <h3 class="tesp">
+                                “We help our partners create industries,
+                                transform spaces and disrupt the world via
+                                design, marketing and technology. In Person and
+                                online.”
+                            </h3>
                         </div>
-                        <div
-                            style="
-                                border: 1px solid #aaa;
-                                width: 90%;
-                                height: 90%;
-                                background-color: blue;
-                            "
-                        >
-                            <h3>h99ooo</h3>
+                        <div class="testpdiv">
+                            <h3 class="tesp">
+                                “We help our partners create industries,
+                                transform spaces and disrupt the world via
+                                design, marketing and technology. In Person and
+                                online.”
+                            </h3>
                         </div>
+
                     </div>
                 </div>
+               <div class="footermob">
+
+                                    <div class="fotermobdiv1"> <h2>
+                                        OO Pictures GmbH<br/>
+                                        Sucher Tech department <br/>
+                                        Lückstraße 23, 10317 Berlin
+                                        </h2>
+                                    </div>
+                                    <div class="fotermobdiv2">
+                                        <img src="/image/facebook.png" alt=""> 
+                                        <img src="/image/instagram.png" alt=""> 
+                                        <img src="/image/twitter.png" alt=""> 
+                                        <img src="/image/linkedin.png" alt=""> 
+                                    </div>
+                                    <div class="fotermobdiv3"><div>
+                                        <img src="/image/phone.png" alt=""> 
+                                        <h2> : 030-55 22 43 03</h2>
+                                    </div>
+                                    <div>
+                                        <img src="/image/email.png" alt=""> 
+                                        <h2> : info@sucher.tech</h2>
+
+                                    </div> 
+                                </div>
+
+               </div>
+
+     
             </div>
+            <div class="section testing">
+                <div class="zoomdiv">
+                    <img src="../image/such5.png" alt="" class="zooming" />
+                </div>
+                <img src="../image/endback.jpeg" alt="" class="endback" />
+
+                <div class="imprintdiv">
+                 
+
+
+                            <div id="imp1">
+                                <h2>About Us</h2>
+                                <h2 >Contact</h2>
+                                <h2>Concept Studio</h2>
+                                <h2>Team</h2>
+                                <h2>Pricing</h2>
+                            </div>
+                            <div id="imp2"> 
+                                <h2>more info</h2>
+                                <h2>Imprint</h2>
+                                <h2>Privacy policy </h2>
+                                <h2>OO Pictures Gmbh</h2>
+                                <h2>Sucher.Studio</h2>
+                                <h2>Sucher.Shop</h2>
+                            </div>
+                            <div id="imp3">
+                                <h2>Serivces</h2>
+                                <h2>Web dev</h2>
+                                <h2>web design</h2>
+                                <h2>E-Commerce & Online Shop</h2>
+                                <h2>Support & Consulting</h2>
+                            </div>
+                               <div class="footerdesc">
+
+                                    <div id="footerdescdiv1"> <h2>
+                                        OO Pictures GmbH<br/>
+                                        Sucher Tech department <br/>
+                                        Lückstraße 23, 10317 Berlin
+                                        </h2>
+                                    </div>
+                                    <div class="footerdescdiv2">
+                                        <img src="/image/facebook.png" alt=""> 
+                                        <img src="/image/instagram.png" alt=""> 
+                                        <img src="/image/twitter.png" alt=""> 
+                                        <img src="/image/linkedin.png" alt=""> 
+                                    </div>
+                                    <div class="footerdescdiv3"><div>
+                                        <img src="/image/phone.png" alt=""> 
+                                        <h2> : 030-55 22 43 03</h2>
+                                    </div>
+                                    <div>
+                                        <img src="/image/email.png" alt=""> 
+                                        <h2> : info@sucher.tech</h2>
+
+                                    </div> 
+                                </div>
+
+               </div>
+
+
+    
+
+                </div>
+            </div>
+             
         </div>
 
         <input type="hidden" id="_4" value="3" />
@@ -264,33 +621,164 @@ glitch"
         <!-- You have to purchase it to try it as detailed in the FAQs:  -->
         <!-- https://alvarotrigo.com/fullPage/extensions/faqs.html-->
 
+        <script>
+            (function () {
+                document
+                    .querySelector(".contactbtn")
+                    .addEventListener("click", function () {
+                        console.log("yes");
+                        document.querySelector(".over").classList.remove("on");
+                        document.querySelector(".overlay").classList.add("on");
+                    });
+                     document
+                    .querySelector(".ham")
+                    .addEventListener("click", function () {
+                        console.log("yes");
+                        document.querySelector(".over").classList.add("on");
+                    });
+                document
+                    .querySelector(".x")
+                    .addEventListener("click", function () {
+                        console.log("yes");
+                        document
+                            .querySelector(".overlay")
+                            .classList.remove("on");
+                    });
+                document
+                    .querySelector(".x1")
+                    .addEventListener("click", function () {
+                        console.log("yes");
+                        document
+                            .querySelector(".over")
+                            .classList.remove("on");
+                    });
+                const zoomelem = document.querySelector(".zooming");
+                let zoom = 1;
+                document.addEventListener("wheel", function (e) {
+                    console.log("nopppooo");
+                    if (location.hash == "#Imprint") {
+                        if (e.deltaY > 0) {
+                            // console.log( zoomelem.style.transform);
+                            zoomelem.style.transform =
+                                "scale(" + (zoom += 0.3) + ")";
+
+                            console.log(zoomelem.style.transform);
+                            // console.log(location.hash);
+                            if (zoom > 20) {
+                                location.hash = "#Home";
+                                zoomelem.style.transform =
+                                    "scale(" + (zoom = 1) + ")";
+                            }
+                        } else {
+                            zoomelem.style.transform =
+                                "scale(" + (zoom = 1) + ")";
+                            console.log("erorro");
+                            // e.preventDefault();
+                        }
+                    }
+                });
+            })();
+        </script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
         <script
             type="text/javascript"
-            src="../exetention/fullpage.scrollHorizontally.limited.min.js"
+            src="../exetention/fullpage.scrollHorizontally.min.js"
         ></script>
-        <!-- END WARNING-->
 
         <script
             type="text/javascript"
             src="../exetention/fullpage.extensions.min.js"
         ></script>
-        <script src="../particles.js"></script>
-        <script src="../particles1.js"></script>
-        <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
-        <!-- stats.js lib -->
-        <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+       
         <script type="text/javascript">
+            const shpere = document.querySelector(".sphere");
+            const planes = Array.from({ length: 36 }, createPlane);
+
+            shpere.append(...planes);
+
+            function createPlane(_, i) {
+                const ul = document.createElement("ul");
+                ul.className = "plane";
+                ul.style.transform = `rotateY(${(i + 1) * 10}deg)`;
+                const lis = Array.from({ length: 18 }, createDot);
+                ul.append(...lis);
+                return ul;
+            }
+
+            function createDot(_, i) {
+                const li = document.createElement("li");
+                li.style.transform = `rotate(${(i + 1) * 10}deg)`;
+                return li;
+            }
+            var slidc;
+            var slideslid;
+            var wid ;
+            if (
+                /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+                    navigator.userAgent
+                )
+            ) {
+                // document.getElementsByClassName(".testmob").style.color =
+                //     "green";
+                console.log("mobile ");
+                slidc = 1;
+                slideslid = false;
+                wid = 600;
+                   document.querySelector(".testing").classList.remove("section");
+                   
+                } else {
+                    // document.getElementsByClassName(".testmob").style.color =
+                    //     "gray";
+                    document.querySelector(".testing").classList.add("section");
+                console.log("not mobile ");
+                slidc = 3;
+                slideslid = true;
+                 wid = 1200;
+            }
+            console.log("mobi", slideslid);
             $(document).ready(function () {
                 $(".l").slick({
                     autoplay: true,
                     autoplayspeed: 1000,
                     dots: true,
+                    arrows: true,
+                    prevArrow: ".slick-prevv",
+                    nextArrow: ".slick-nextt",
+                });
+
+                $(".sec5-next").slick({
+                    autoplay: true,
+                    centerMode: false,
+                    // centerPadding: "50px",
+                    // dots: true,
+                    arrows: true,
+                    slidesToShow: slidc,
+                    responsive: [
+                        {
+                            breakpoint: 0,
+                            settings: {
+                                arrows: false,
+                                centerMode: false,
+                                // centerPadding: "40px",
+                                slidesToShow: 3,
+                            },
+                        },
+                        {
+                            breakpoint: 0,
+                            settings: {
+                                arrows: false,
+                                centerMode: false,
+                                // centerPadding: "40px",
+                                slidesToShow: 1,
+                            },
+                        },
+                    ],
                 });
             });
             new fullpage("#myContainer", {
+                licenseKey: "FCE35F8D-67284A68-BB343B9A-068CD8B0",
                 sectionsColor: [
                     "#ff73a1",
                     "#4BBFC3",
@@ -299,11 +787,21 @@ glitch"
                     "#ccddff",
                     "#ccc",
                 ],
-                anchors: ["firstPage", "secondPage", "3rdPage", "4thpage"],
+                anchors: [
+                    "Home",
+                    "Story",
+                    "Services",
+                    "Portfolio",
+                    "Team",
+                    "Pricing",
+                    "Feedback",
+                    "Imprint",
+                ],
                 menu: "#menu",
                 slidesNavigation: true,
-                scrollHorizontally: true,
-                scrollHorizontallyKey: "08FB523D-FFD04D76-A5BFB8B8-EB8E6751",
+                scrollHorizontallyKey:
+                    "c3VjaGVyLnRlY2hfWTQ4YzJOeWIyeHNTRzl5YVhwdmJuUmhiR3g1bkli",
+                scrollHorizontally: slideslid,
                 afterSlideLoad: function (
                     section,
                     origin,
@@ -333,7 +831,11 @@ glitch"
             });
         </script>
 
-        <script src="./script.js"></script>
-        <script src="./script1.js"></script>
+        <script src="/examples/nav.js"></script>
+        <script src="/examples/axios.js"></script>
+        <script src="/examples/scriptaxios.js"></script>
+        <script src="/examples/dat.js"></script>
+        <script src="/examples/contactjs.js"></script>
+      
     </body>
 </html>

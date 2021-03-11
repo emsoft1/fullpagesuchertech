@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(155, 2, 210);
+}
+.ballone {
+    position: absolute;
+    top: 120vh;
+    left: 120vw;
+    /* transition-duration: 4s; */
+    /* transition-timing-function: ease-in-out; */
+    /* transform: scaleY(0.5); */
+    transform: translate(-50%, -50%);
+
+    transition-duration: 4s;
+    /* background-color: blue; */
+}
+.balltwo {
+    position: absolute;
+    top: 120vh;
+    left: 120vw;
+    /* transition-duration: 4s; */
+    /* transition-timing-function: ease-in-out; */
+    /* transform: scaleY(0.5); */
+    transform: translate(-50%, -50%);
+    /* visibility: hidden; */
+    transition-duration: 3s;
+}
+.balltree {
+    position: absolute;
+    top: 120vh;
+    left: 120vw;
+    /* transition-duration: 4s; */
+    /* transition-timing-function: ease-in-out; */
+    /* transform: scaleY(0.5); */
+    transform: translate(-50%, -50%);
+    visibility: visible;
+    transition-duration: 3.5s;
+}
+.ballfour {
+    position: absolute;
+    top: 120vh;
+    left: 120vw;
+    /* transition-duration: 4s; */
+    /* transition-timing-function: ease-in-out; */
+    /* transform: scaleY(0.5); */
+    transform: translate(-50%, -50%) rotate(90deg);
+
+    transition-duration: 4s;
+    /* background-color: blue; */
+}
+.ballfive {
+    position: absolute;
+    top: 120vh;
+    left: 120vw;
+    /* transition-duration: 4s; */
+    /* transition-timing-function: ease-in-out; */
+    /* transform: scaleY(0.5); */
+    transform: translate(-50%, -50%) rotate(90deg);
+    /* visibility: hidden; */
+    transition-duration: 3s;
+}
+.ballsix {
+    position: absolute;
+    top: 120vh;
+    left: 120vw;
+    /* transition-duration: 4s; */
+    /* transition-timing-function: ease-in-out; */
+    /* transform: scaleY(0.5); */
+    transform: translate(-50%, -50%) rotate(90deg);
+    visibility: visible;
+    transition-duration: 3.5s;
+}
+.on {
+    transition-property: transform;
+
+    transform: scale(0.15) translate(-1100vw, -1000vh) rotate(45deg);
+    /* transform: ; */
+    /* transform: scaleX(0.5); */
+}
